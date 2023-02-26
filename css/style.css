@@ -7,9 +7,9 @@
 @font-face {
     font-family: "Open Sans";
     src:local("Open Sans");
-    src: url(/fonts/OpenSans-Bold.woff2) format('woff2'),
-    url(/fonts/OpenSans-Bold.woff) format('woff'), 
-    url(/fonts/OpenSans-Bold.ttf) format('truetype');
+    src: url(../fonts/OpenSans-Bold.woff2) format('woff2'),
+    url(../fonts/OpenSans-Bold.woff) format('woff'), 
+    url(../fonts/OpenSans-Bold.ttf) format('truetype');
     font-weight: 700;
     font-display: swap;
 }
@@ -17,9 +17,9 @@
 @font-face {
     font-family: "Open Sans";
     src:local("Open Sans");
-    src: url(/fonts/OpenSans-Regular.woff2) format('woff2'),
-    url(/fonts/OpenSans-Regular.woff) format('woff'),    
-    url(/fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Regular.woff2) format('woff2'),
+    url(../fonts/OpenSans-Regular.woff) format('woff'),    
+    url(../fonts/OpenSans-Regular.ttf);
     font-weight: 400;
     font-display: swap;
 }
@@ -31,6 +31,7 @@ body {
 .container {
     margin: 0 auto;
     width: 1660px;
+    background-color:#ffffff;
 }
 
 .header-container {
@@ -38,7 +39,7 @@ body {
     display: flex;
     /* width: 100%; */
     height: 450px;
-    background-image: url("/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     justify-content: center;
     align-items: center;
 }
@@ -101,7 +102,7 @@ body {
 }
 
 .cards-section {
-    background-color:#ffffff;
+    margin-bottom: 64px;
 }
 
 
@@ -132,11 +133,27 @@ body {
 }
 
 .card {
-    background-color:aqua;
+    position: relative;
+    display: flex;
+    background-color: #eff6f1;
     width: calc((100%-12px)/4);
     height: 320px;
     margin-right: 4px;
-    align-items:flex-end;
+    padding: 16px 18px;
+    align-items: end;
+    background-image: url(../images/trend1.jpg);
+
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
 }
 
 .card:last-child {
@@ -145,5 +162,101 @@ body {
 
 .card__content-container {
     box-sizing:content-box;
+    border: 3px solid rgba(181, 159, 91, 0.6);
+    padding: 36px 32px;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#ffffff;
+    z-index: 1;
+}
 
+.card__categores {
+    display: flex;
+    color:#b59f5b
+}
+
+.card__category-item {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.card__category-item:last-child {
+    margin-right: 0;
+} 
+
+.card__category-item:hover {
+    text-decoration: underline;
+}
+
+.card__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card__text:hover {
+    color:#b59f5b;
+}
+
+.second-card {
+    background-image: url(../images/trend2.jpg);
+}
+
+.third-card {
+    background-image: url(../images/trend3.jpg);
+}
+
+.fourth-card {
+    background-image: url(../images/trend4.jpg);
+}
+
+.second-section__container {
+    width: 1200px;
+    padding: o 15px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.posts-container {
+    width: 790px;
+}
+
+.post {
+    height: 295px;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 59px;
+}
+
+.post__photo-container {
+    height: 100%;
+    width: 382px;
+    margin-right: 25px;
+}
+
+.post__photo {
+    height: 100%;
+    width: 100%;
+}
+
+.post__content-container {
+    border: 1px solid black;
+    width: 383px;
+    height: 100%;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.post__category-item {
+    position: relative;
+    top: -13px;
+}
+
+.post__title {
+    position: relative;
+    top: -13px;
 }
