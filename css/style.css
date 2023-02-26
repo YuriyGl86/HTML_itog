@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: "Open Sans";
+    src:local("Open Sans");
+    src: url(/fonts/OpenSans-Bold.woff2) format('woff2'),
+    url(/fonts/OpenSans-Bold.woff) format('woff'), 
+    url(/fonts/OpenSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src:local("Open Sans");
+    src: url(/fonts/OpenSans-Regular.woff2) format('woff2'),
+    url(/fonts/OpenSans-Regular.woff) format('woff'),    
+    url(/fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1660px;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    /* width: 100%; */
+    height: 450px;
+    background-image: url("/images/banner-bg.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.header-title {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    width: 687px;
+    z-index: 1;
+    line-height: 75px;
+
+}
+
+.nav-menu {
+    position: absolute;
+    color:#ffffff;
+    right: 245px;
+    top: 45px;
+}
+
+.nav-menu__list {
+    display: flex ;
+}
+
+.nav-menu__item {
+    margin-right: 35px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.nav-menu__item:last-child {
+    margin-right: 0;
+}
+
+.nav-menu__item:hover {
+    text-decoration: underline;    
+}
+
+.header-logo {
+    width: 179px;
+    height: 41px;
+    position: absolute;
+    top: 28px;
+    left: 248px;
+}
+
+.cards-section {
+    background-color:#ffffff;
+}
+
+
+
+.cards-title-box {
+    padding-top: 65px;
+}
+
+.cards-title-box__text {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.cards-title-box__underscope {
+    width: 67px;
+    background-color: #b59f5b;
+    height: 3px;
+    margin-bottom: 28px;
+}
+
+.cards-container {
+    display: flex;
+}
+
+.card {
+    background-color:aqua;
+    width: calc((100%-12px)/4);
+    height: 320px;
+    margin-right: 4px;
+    align-items:flex-end;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card__content-container {
+    box-sizing:content-box;
+
+}
