@@ -172,12 +172,12 @@ body {
     z-index: 1;
 }
 
-.card__categores {
+.categores {
     display: flex;
     color:#b59f5b
 }
 
-.card__category-item {
+.categores__item {
     margin-right: 20px;
     font-size: 14px;
     line-height: 40px;
