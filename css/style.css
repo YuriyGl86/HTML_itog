@@ -103,12 +103,11 @@ body {
 
 .cards-section {
     margin-bottom: 64px;
+    font-size: 20px;
 }
 
-
-
 .cards-title-box {
-    padding-top: 65px;
+    padding-top: 3.25em;
 }
 
 .cards-title-box__text {
@@ -117,15 +116,15 @@ body {
     text-transform: uppercase;
     font-family: Open Sans;
     font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 14px;
+    font-size: 1em;
+    margin-bottom: 0.7em;
 }
 
 .cards-title-box__underscope {
-    width: 67px;
+    width: 3.35em;
     background-color: #b59f5b;
-    height: 3px;
-    margin-bottom: 28px;
+    height: 0.15em;
+    margin-bottom: 1.4em;
 }
 
 .cards-container {
@@ -192,8 +191,8 @@ body {
 }
 
 .title-text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 .title-text:hover {
@@ -217,23 +216,26 @@ body {
     padding: o 15px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .posts-container {
     width: 790px;
+    font-size: 20px;
 }
 
 .post {
     height: 295px;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 59px;
 }
 
 .post__photo-container {
     height: 100%;
-    width: 382px;
-    margin-right: 25px;
+    max-width: 48.5%;
+/*     width: 382px; */
+    margin-right: 3%;
 }
 
 .post__photo {
@@ -242,12 +244,15 @@ body {
 }
 
 .post__content-container {
-    border: 1px solid black;
-    width: 383px;
+    /* border: 1px solid black; */
+    /* width: 383px; */
+    width: 48.5%;
     height: 100%;
     font-family: "Open Sans";
     font-weight: 700;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .post__category-item {
@@ -263,10 +268,10 @@ body {
 }
 
 .date {
-    font-size: 12px;
+    font-size: 0.6em;
     font-weight: 400;
     color: #888888;
-    line-height: 40px;
+    line-height: 2em;
 }
 
 .signature {
@@ -275,7 +280,9 @@ body {
 
 .post__text-container {
     display: flex;
-    align-items:center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
     
 }
 
@@ -283,4 +290,31 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.side-bar {
+    width: 270px;
+    border: 1px solid black;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.new-posts-container {
+    display: flex;
+}
+
+
+.new-posts_title-box {
+    padding-top: 0;
+} 
+
+.new-posts-post {
+   height: 70px; 
+}
+
+.new-post-content-container {
+    flex-grow: 1;
 }
