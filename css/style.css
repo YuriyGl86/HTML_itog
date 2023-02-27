@@ -183,20 +183,20 @@ body {
     line-height: 40px;
 }
 
-.card__category-item:last-child {
+.categores__item:last-child {
     margin-right: 0;
 } 
 
-.card__category-item:hover {
+.categores__item:hover {
     text-decoration: underline;
 }
 
-.card__text {
+.title-text {
     font-size: 20px;
     line-height: 24px;
 }
 
-.card__text:hover {
+.title-text:hover {
     color:#b59f5b;
 }
 
@@ -247,16 +247,40 @@ body {
     height: 100%;
     font-family: "Open Sans";
     font-weight: 700;
-    text-transform: uppercase;
     position: relative;
 }
 
 .post__category-item {
     position: relative;
     top: -13px;
+    text-transform: uppercase;
 }
 
 .post__title {
     position: relative;
     top: -13px;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888888;
+    line-height: 40px;
+}
+
+.signature {
+    font-size: 12px;
+}
+
+.post__text-container {
+    display: flex;
+    align-items:center;
+    
+}
+
+.post__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
 }
