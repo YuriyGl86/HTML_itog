@@ -91,7 +91,8 @@ body {
 }
 
 .nav-menu__item:hover {
-    text-decoration: underline;    
+    text-decoration: underline;
+    cursor: pointer;    
 }
 
 .header-logo {
@@ -189,6 +190,7 @@ body {
 
 .categores__item:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .title-text {
@@ -199,6 +201,7 @@ body {
 
 .title-text:hover {
     color:#b59f5b;
+    cursor: pointer;
 }
 
 .second-card {
@@ -302,7 +305,7 @@ body {
 .side-bar {
     width: 270px;
     border: 1px solid black;
-    height: 1200px;
+    height: 1500px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -334,13 +337,78 @@ body {
 
 .search-form {
     display: flex;
+    margin-bottom: 60px;
 }
 
-.search-input {
+.search-form__input {
     flex-grow: 1;
     height: 48px;
     background-color: #f4f7f6;
     font-size: 13px;
     border: none;
     padding-left: 18px;
+}
+
+.search-form__button {
+    height: 48px;
+    width: 48px;
+    border: none;
+    background-color:#b59f5b;
+    background-image: url(/svg/search.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.search-form__button:hover {
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.subscribe__input {
+    margin-bottom: 16px;
+}
+
+.subscribe__button {
+    background-image: none;
+    width: auto;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.tags {
+    margin-bottom: 60px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #f4f3f1;
+    padding: 7px 12px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.tag:hover {
+    border-color: #b59f5b;
+    cursor: pointer;
+}
+
+.tag:last-child {
+    margin-right: 0;
 }
