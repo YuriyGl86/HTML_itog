@@ -384,9 +384,71 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        <footer></footer>
+        <!-- --------------------  ПОДВАЛ  --------------------------------------------------------- -->
+        <footer>
+            <div class="footer-container">
+                <address class="social">
+                    <ul class="social__list">
+                        <li class="social__item"><a href="#" class="social__item-link dribble"></a></li>
+                        <li class="social__item"><a href="#" class="social__item-link pinterest"></a></li>
+                        <li class="social__item"><a href="#" class="social__item-link tumbler"></a></li>
+                    </ul>
+                </address>
+                <div class="copyright">
+                    <span>Copyright © 2009–2019 City Blog LLC.</span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup">
+            <input type="checkbox" name="check" id="popup-checkbox" checked class="popup__toggle">
+            <div class="popup__container">
+                <label for="popup-checkbox" class="popup__background"></label>
+                <div class="popup__content-container">
+                    <label for="popup-checkbox" class="popup__closer"><div class="cross"></div></label>
+                    <div class="cards-title-box">
+                        <h2 class="cards-title-box__text">ваш фидбек</h2>
+                        <hr class="cards-title-box__underscope">
+                    </div>
+                    <form action="get" class="popup__form">
+
+                        <div class="form-row">
+                            <label class="form-group">
+                                <span class="form-hint">Как часто вы заходите на сайт?</span>
+                                <select name="select" class="form-select">
+                                    <option value="" class="form-select-option">Почти каждый день</option>
+                                    <option value="" class="form-select-option">Раз в несколько дней</option>
+                                    <option value="" class="form-select-option">Раз в несколько недель</option>
+                                    <option value="" class="form-select-option">Несколько раз в год</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="form-row">
+                            <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+                            <div class="radio-container">
+                                <label class="rdio-button-block">
+                                    <input type="radio" name="e-mail" class="form-radio-button"><span class="radio-text">Да</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="e-mail" class="form-radio-button"><span class="radio-text">Да</span>
+                                </label>
+                            </div>                            
+                        </div>
+ 
+                        <div class="form-row form-row-last">
+                            <label class="form-group">
+                                <span class="form-hint form-row-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                                <textarea class="form-textarea" placeholder="Может, больше рецептов?"></textarea>                    
+                            </label>
+                        </div>
+                        <button type="submit" class="send-button search-form__button">отправить</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

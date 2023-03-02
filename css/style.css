@@ -433,6 +433,10 @@ body {
     margin-left: 4px;
 }
 
+.third-section {
+    margin-bottom: 64px;
+}
+
 .third-section__container {
     display: flex;
     flex-direction: column;
@@ -532,4 +536,196 @@ body {
 
 .shop-item__old_price {
     text-decoration: line-through;
+}
+
+.social {
+    background-color: #f4f7f6;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__list {
+    display: flex;
+}
+
+
+
+.social__item-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+.dribble {
+    background-image: url(../svg/001-dribbble.svg)
+}
+
+.pinterest {
+    background-image: url(../svg/001-pinterest.svg);
+}
+
+.tumbler {
+    background-image: url(../svg/003-tumblr.svg);
+}
+
+.copyright {
+    height: 130px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 70px;
+}
+
+.popup__toggle {
+    display: none;
+}
+
+.popup__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items:center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.popup__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+}
+
+.popup__content-container {
+    width: 390px;
+    height: 590px;
+    background-color: #ffffff;
+    z-index: 4;
+    position: relative;
+    padding: 0 30px;
+}
+
+.popup__closer {
+    font-size: 45px;
+/*     color: #ffffff; */
+    position: absolute;
+    right: 0;
+    top: -24px;
+}
+
+.cross {
+    width: 18px;
+    height: 18px;
+    background-image: url(../svg/form-x.svg);
+}
+
+.popup__toggle:checked + div.popup__container {
+    display: flex;
+}
+
+ .popup__form {
+    width: 100%;
+   /*  border: 1px solid black; */
+   font-size: 13px;
+ }
+
+ .form-hint {
+    font-size: 13px;
+    line-height: 40px;
+ }
+
+ .form-row {
+    display: block;
+    margin-bottom: 33px;
+ }
+
+ .form-row-last {
+    margin-bottom: 26px;
+ }
+
+ 
+ .form-select {
+    width: 100%;
+    height: 48px;
+    border: none;
+    padding-left: 19px;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f4f7f6;
+    background-image: url(../svg/form-arrows.svg);
+    background-size: 8px 17px;
+    background-repeat: no-repeat;
+    background-position:  right 14px center;
+ }
+
+ .form-select:focus {
+    outline: 2px solid #b59f5b;
+ }
+
+.rdio-button-block:nth-last-of-type(n+2) {
+    margin-right: 16px;
+}
+
+ .form-radio-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+
+ .radio-text::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-image: url(../svg/form-empty-circle.svg);
+    background-size: cover;
+    background-position: center center;
+    color:#b59f5b;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 4px;
+ }
+
+ .form-radio-button:checked + .radio-text::before {
+    background-image: url(../svg/form-circle.svg);
+ }
+
+ .form-row-textarea {
+    display: inline-block;
+    line-height: 13px;
+    margin-bottom: 11px;
+ }
+
+ .form-textarea {
+    width: 330px;
+    height: 130px;
+    display: block;
+    padding: 20px;
+ }
+
+
+
+ .send-button {
+    background-image: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    
 }
