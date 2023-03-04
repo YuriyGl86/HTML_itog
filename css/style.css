@@ -185,7 +185,8 @@ body {
     text-transform: uppercase;
     color:#ffffff;
     z-index: 1;
-    max-height: -webkit-fill-available;
+    /* max-height: -webkit-fill-available; */
+    max-height: 100%;
 }
 
 .categores {
@@ -238,9 +239,9 @@ body {
 .section__container {
     max-width: 1200px;
     padding: o 15px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .posts-container {
@@ -322,7 +323,7 @@ body {
 }
 
 .side-bar {
-    width: 270px;
+    max-width: 270px;
 /*     border: 1px solid black; */
     height: 1500px;
     display: flex;
@@ -802,5 +803,37 @@ body {
 
     .card:nth-child(even) {
       margin-right: 0;
+    }
+
+    .cards-section {
+        font-size: 17px;
+    }
+
+    .cards-title-box__text {
+        font-size: 18px;
+    }
+
+    .section__container {
+        justify-content: space-evenly;
+    }
+
+    .post {
+        flex-direction: column;
+        height:auto;
+        padding-bottom: 19px;
+        border-bottom: 3px solid #eeeeee;
+        margin-bottom: 40px;
+    }
+
+    .posts-container {
+        max-width: 51%;
+    }
+
+    .side-bar {
+        max-width: 36%;
+    }
+
+    .post__photo-container {
+        max-width: 100%;
     }
 }
