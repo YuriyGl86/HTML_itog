@@ -31,7 +31,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1660px;
+    max-width: 1660px;
     background-color:#ffffff;
 }
 
@@ -70,8 +70,11 @@ body {
 .nav-menu {
     position: absolute;
     color:#ffffff;
-    right: 245px;
+    right: 14.8%;
     top: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .nav-menu__list {
@@ -95,12 +98,22 @@ body {
     cursor: pointer;    
 }
 
+.nav-menu__humburger {
+    display: none;
+}
+
+.nav-menu__humburger-checkbox {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .header-logo {
     width: 179px;
     height: 41px;
     position: absolute;
     top: 28px;
-    left: 248px;
+    left: 14.94%;
 }
 
 .cards-section {
@@ -221,7 +234,7 @@ body {
 }
 
 .section__container {
-    width: 1200px;
+    max-width: 1200px;
     padding: o 15px;
     margin: 0 auto;
     display: flex;
@@ -726,4 +739,38 @@ body {
     color: white;
     text-transform: uppercase;
     
+}
+
+
+
+
+/* __________________адаптив___________________ */
+
+
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .nav-menu__humburger-checkbox {
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .nav-menu__list {
+        display: none;
+    }
+
+    .nav-menu__humburger-checkbox:checked + .nav-menu__list {
+        display: flex;
+    }
+
+    .nav-menu_humburger-picture {
+        width: 20px;
+        height: 20px;
+        background-size: 18px 23px;
+        background-image: url(../svg/burger-menu-svgrepo-com\ \(1\).svg);
+        color: #ffffff;
+        margin-left: 30px;     
+    }
+
 }
