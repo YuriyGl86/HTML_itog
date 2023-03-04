@@ -38,7 +38,7 @@ body {
 .header-container {
     position: relative;
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     height: 450px;
     background-image: url("../images/banner-bg.jpg");
     justify-content: center;
@@ -61,7 +61,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    width: 687px;
+    max-width: 687px;
     z-index: 1;
     line-height: 75px;
 
@@ -71,7 +71,7 @@ body {
     position: absolute;
     color:#ffffff;
     right: 14.8%;
-    top: 45px;
+    top: 10%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -109,7 +109,7 @@ body {
 }
 
 .header-logo {
-    width: 179px;
+    width: 10.78%;
     height: 41px;
     position: absolute;
     top: 28px;
@@ -144,19 +144,20 @@ body {
 
 .cards-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
     position: relative;
     display: flex;
     background-color: #eff6f1;
-    width: calc((100%-12px)/4);
+    width: calc((100% - 12px)/4);
     height: 320px;
     margin-right: 4px;
     padding: 16px 18px;
     align-items: end;
     background-image: url(../images/trend1.jpg);
-
+    background-size:cover;
 }
 
 .card::after {
@@ -175,7 +176,7 @@ body {
 }
 
 .card__content-container {
-    box-sizing:content-box;
+    /* box-sizing:content-box; */
     border: 3px solid rgba(181, 159, 91, 0.6);
     padding: 36px 32px;
     width: 100%;
@@ -184,6 +185,7 @@ body {
     text-transform: uppercase;
     color:#ffffff;
     z-index: 1;
+    max-height: -webkit-fill-available;
 }
 
 .categores {
@@ -242,7 +244,7 @@ body {
 }
 
 .posts-container {
-    width: 790px;
+    max-width: 790px;
     font-size: 20px;
 }
 
@@ -758,19 +760,47 @@ body {
 
     .nav-menu__list {
         display: none;
-    }
+            }
 
     .nav-menu__humburger-checkbox:checked + .nav-menu__list {
         display: flex;
     }
 
+    .nav-menu {
+        top: 53px;
+    }
+
     .nav-menu_humburger-picture {
-        width: 20px;
-        height: 20px;
-        background-size: 18px 23px;
+        width: 23px;
+        height: 23px;
+        background-size: 23px 23px;
         background-image: url(../svg/burger-menu-svgrepo-com\ \(1\).svg);
         color: #ffffff;
         margin-left: 30px;     
     }
 
+    .header-logo {
+
+        top: 43px;
+        left: 4.6%;
+    }
+
+    .header-container {
+        height: 390px;
+        
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .card {
+        width: calc((100% - 4px)/2);
+        height: 247px;        
+    }
+
+    .card:nth-child(even) {
+      margin-right: 0;
+    }
 }
