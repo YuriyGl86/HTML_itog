@@ -467,21 +467,21 @@ body {
 
 .shop-item {
     position: relative;
-    width: 347px;
+    width: 29.66%;
     height: 440px;
  /*    border: 1px solid black; */
 }
 
 .shop-item__content-container {
     width: 86%;
-    height: 204px;
+/*     height: 204px; */
     position: relative;
     left: 7%;
 }
 
 .shop-item__img {
     width: 100%;
-    height: 204px;   
+ /*    height: 204px;  */  
     margin-bottom: 25px;
 
 }
@@ -820,6 +820,10 @@ body {
         margin-bottom: 40px;
     }
 
+    .post.tablet:last-child {
+        margin-bottom: 0;
+    }
+
     .posts-container {
         max-width: 51%;
     }
@@ -843,7 +847,7 @@ body {
         margin-bottom: 9.6%;
     }
 
-    .post__header.tablet {
+    .post__header.tablet {                 
         margin-bottom: 8.6%;
     }
 
@@ -858,5 +862,14 @@ body {
 
     .third-section {
         font-size: 18px;
+    }
+
+    .shop-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .shop-item {
+        width: 48.29%;
     }
 }
