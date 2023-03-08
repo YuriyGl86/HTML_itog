@@ -67,6 +67,14 @@ body {
 
 }
 
+.header-logo {
+    width: 10.78%;
+    /* height: 41px; */
+    position: absolute;
+    top: 28px;
+    left: 14.94%;
+}
+
 .nav-menu {
     position: absolute;
     color:#ffffff;
@@ -108,14 +116,6 @@ body {
     -moz-appearance: none;
 }
 
-.header-logo {
-    width: 10.78%;
-    height: 41px;
-    position: absolute;
-    top: 28px;
-    left: 14.94%;
-}
-
 .cards-section {
     margin-bottom: 64px;
     font-size: 20px;
@@ -152,7 +152,7 @@ body {
     display: flex;
     background-color: #eff6f1;
     width: calc((100% - 12px)/4);
-    height: 320px;
+    min-height: 320px;
     margin-right: 4px;
     padding: 16px 18px;
     align-items: end;
@@ -315,7 +315,7 @@ body {
 
 .side-bar {
     max-width: 270px;
-    height: 1500px;
+    /* height: 1500px; */
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -483,7 +483,8 @@ body {
 
 .shop-item__box {
     width: 100%;
-    height: 267px;
+    /* height: 267px; */
+    height: 64%;
     border: 3px solid #b59f5b;
     position: absolute;
     bottom: 0;
@@ -747,7 +748,7 @@ body {
 
 
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media /* (min-width: 641px) and  */(max-width: 1199px) {
     .nav-menu__humburger-checkbox {
         display: block;
         -webkit-appearance: none;
@@ -784,6 +785,8 @@ body {
 
     .header-container {
         height: 390px;
+        background-image: url(../images/banner-bg-tablet.jpg);
+        background-position: left bottom;
         
     }
 
@@ -794,7 +797,7 @@ body {
 
     .card {
         width: calc((100% - 4px)/2);
-        height: 247px;        
+        min-height: 247px;        
     }
 
     .card:nth-child(even) {
@@ -875,4 +878,101 @@ body {
     .copyright {
         height: 100px;
     }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    .card {
+        width: calc((100% - 12px)/4);
+    }
+}
+
+
+@media (max-width: 640px) {
+    .header-container {
+        height: 640px;
+        background-image: url(../images/banner-mobile.jpg);
+        background-position: right bottom;
+        padding: 0 15px;
+        
+    }
+
+    .header-logo {
+        width: 75%;
+       /*  width: 270px; */
+        max-height: 61px;
+        left: 12.5%;
+        top: 225px;
+    }
+
+    .header-title {
+        position: absolute;
+        top: 330px;
+        font-size: 26px;
+        line-height: 36px;
+        max-width: 85%;
+    }
+
+    .cards-section {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 247px;
+        margin-right: 0;
+        margin-bottom: 3px;        
+    }
+
+    .section__container {
+        width: 100%;
+        /* flex-direction: column; */
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    .posts-container {
+        max-width: 100%;
+        margin-bottom: 44px;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .post__title {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .post__header.tablet {                 
+        margin-bottom: 7%;
+    }
+
+    .post__text.tablet {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .side-bar {
+        max-width: 100%;
+    }
+
+    .search-form {
+        margin-bottom: 45px;
+    }
+
+    .tags {
+        margin-bottom: 45px;
+    }
+
+    .shop-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .shop-item {
+        width: 100%;
+    }
+
+
 }
