@@ -110,6 +110,10 @@ body {
     display: none;
 }
 
+.nav-menu__humburger-picture {
+    display: none;
+}
+
 .nav-menu__humburger-checkbox {
     display: block;
     -webkit-appearance: none;
@@ -744,6 +748,8 @@ body {
 
 
 
+
+
 /* __________________адаптив___________________ */
 
 
@@ -769,11 +775,12 @@ body {
         right: 3%;
     }
 
-    .nav-menu_humburger-picture {
+    .nav-menu__humburger-picture {
+        display: block;
         width: 23px;
         height: 23px;
         background-size: 23px 23px;
-        background-image: url(../svg/burger-menu-svgrepo-com\ \(1\).svg);
+        /* background-image: url(../svg/burger-menu-svgrepo-com\ \(1\).svg); */
         color: #ffffff;
         margin-left: 30px;     
     }
