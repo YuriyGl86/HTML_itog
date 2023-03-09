@@ -638,13 +638,12 @@ body {
     font-size: 45px;
     position: absolute;
     right: 0;
-    top: -24px;
+    top: -45px;
 }
 
 .cross {
     width: 18px;
     height: 18px;
-    background-image: url(../svg/form-x.svg);
 }
 
 .popup__toggle:checked + div.popup__container {
@@ -978,7 +977,7 @@ body {
     } 
 
     .popup__closer {
-        top: -33px;
+        top: -45px;
     }
 
 }
