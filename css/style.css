@@ -54,7 +54,22 @@ body {
     z-index: 0;
 }
 
+
+.section__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-section {
+    display: block;
+}
+
+
 .header-title {
+    /* display: block; */
     font-family: "Open Sans";
     font-weight: 700;
     font-size: 45px;
@@ -70,16 +85,16 @@ body {
 .header-logo {
     width: 10.78%;
     /* height: 41px; */
-    position: absolute;
+/*     position: absolute;
     top: 28px;
-    left: 14.94%;
+    left: 14.94%; */
 }
 
 .nav-menu {
-    position: absolute;
+    /* position: absolute; */
     color:#ffffff;
-    right: 14.8%;
-    top: 10%;
+    /* right: 14.8%;
+    top: 10%; */
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -241,13 +256,7 @@ body {
     background-image: url(../images/trend4.jpg);
 }
 
-.section__container {
-    max-width: 1200px;
-    padding: o 15px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
+
 
 .posts-container {
     max-width: 790px;
@@ -484,7 +493,7 @@ body {
 }
 
 .shop-container {
-    width: 90.9%;
+    /* width: 90.9%; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -495,34 +504,21 @@ body {
     width: 29.66%;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    padding: 0 20px;
 }
 
 .shop-item__content-container {
-    width: 86%;
+    width: 100%;
     height: 100%;
     position: relative;
     /* left: 7%; */
     margin: 0 auto;
-    padding-bottom: 26px;
-    flex-grow: 1;
+    /* padding-bottom: 26px; */
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction:column;
 }
-
-.shop-item__content {
-    position: relative;
-    flex-grow: 1;
-    
-}
-
-.shop-item__content::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: -80px;
-    border: 3px solid #b59f5b;
-}
-
 
 .shop-item__img {
     width: 100%;
@@ -530,23 +526,29 @@ body {
 
 }
 
-.shop-item__box {
-    width: 100%;
-    /* height: 267px; */
-    height: 64%;
-    border: 3px solid #b59f5b;
-    position: absolute;
-    bottom: 0;
-    background-color: transparent;
-    z-index: 0;
-    
+.shop-item__content {
+    position: relative;
+    flex-grow: 1;
+    padding-bottom: 7.5%;
 }
+
+.shop-item__content::before {
+    content: '';
+    position: absolute;
+    left: -7%;
+    right: -7%;
+    bottom: 0;
+    top: -80px;
+    border: 3px solid #b59f5b;
+}
+
 
 .shop-item__title {
     text-align: left;
     line-height: 24px;
     padding-top: 0;
     margin-bottom: 5px;
+    display: block;
 }
 
 .shop-item__text {

@@ -13,23 +13,27 @@
     <div class="container">
         <header>
             <div class="header-container">
-                <img src="svg/noemi-logo.svg" alt="логотип noemi" class="header-logo">
-                <nav class="nav-menu">
-                    <label for="humb-checkbox" >
-                        <img src="svg/burger-menu-svgrepo-com.svg" alt="гамбургер" class="nav-menu__humburger-picture">
-                    </label>
-                    <input type="checkbox" class="nav-menu__humburger-checkbox" id="humb-checkbox">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">главная</li>
-                        <li class="nav-menu__item">посты</li>
-                        <li class="nav-menu__item">статьи</li>
-                        <li class="nav-menu__item">теги</li>
-                        <li class="nav-menu__item">темы</li>
-                        <li class="nav-menu__item">контакты</li>
-                    </ul>
+                <section class="section__container header-section">
+                    <div class="logo-menu">
+                        <img src="svg/noemi-logo.svg" alt="логотип noemi" class="header-logo">
+                        <nav class="nav-menu">
+                            <label for="humb-checkbox" >
+                                <img src="svg/burger-menu-svgrepo-com.svg" alt="гамбургер" class="nav-menu__humburger-picture">
+                            </label>
+                            <input type="checkbox" class="nav-menu__humburger-checkbox" id="humb-checkbox">
+                            <ul class="nav-menu__list">
+                                <li class="nav-menu__item">главная</li>
+                                <li class="nav-menu__item">посты</li>
+                                <li class="nav-menu__item">статьи</li>
+                                <li class="nav-menu__item">теги</li>
+                                <li class="nav-menu__item">темы</li>
+                                <li class="nav-menu__item">контакты</li>
+                            </ul>
 
-                </nav>
-                <h1 class="header-title"> блог о творчестве, спорте, и образе жизни</h1>                
+                        </nav>
+                    </div>
+                    <h1 class="header-title"> блог о творчестве, спорте, и образе жизни</h1>
+                </section>                
             </div>
         </header>
         <main>
@@ -343,8 +347,8 @@
                         <div class="shop-container">
 
                             <div class="shop-item">
-                                <!-- <div class="shop-item__content-container"> -->
-                                    <picture class="shop-item__img">
+                                <div class="shop-item__content-container">
+                                    <picture>
                                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg 1x">
                                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg 1x">
                                         <img src="images/shop-item-mobile1.jpg" alt="первый продукт" class="shop-item__img">
@@ -360,14 +364,12 @@
                                             <button class="shop-item__button" type="button">в магазин</button>
                                         </div>                                   
                                     </div>
-                                <!-- </div>  -->                           
-                                <!-- <div class="shop-item__box">                                
-                                </div> -->
+                                </div>                            
                             </div>
 
                             <div class="shop-item">
                                 <div class="shop-item__content-container">
-                                    <picture class="shop-item__img">
+                                    <picture>
                                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg 1x">
                                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg 1x">
                                         <img src="images/shop-item-mobile2.jpg" alt="первый продукт" class="shop-item__img">
@@ -383,13 +385,11 @@
                                         </div>                                   
                                     </div>
                                 </div>                            
-                                <div class="shop-item__box">                                
-                                </div>
                             </div>
 
                             <div class="shop-item">
                                 <div class="shop-item__content-container">
-                                    <picture class="shop-item__img">
+                                    <picture>
                                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg 1x">
                                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg 1x">
                                         <img src="images/shop-item-mobile3.jpg" alt="первый продукт" class="shop-item__img">
@@ -407,8 +407,6 @@
                                         </div>                                   
                                     </div>
                                 </div>                            
-                                <div class="shop-item__box">                                
-                                </div>
                             </div>
                             
                         </div>
